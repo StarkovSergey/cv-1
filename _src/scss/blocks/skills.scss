@@ -1,0 +1,10 @@
+.skills {
+  @media (max-width: 620px) {
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+  }
+}
+
+.skills__list {
+  text-align: center;
+}

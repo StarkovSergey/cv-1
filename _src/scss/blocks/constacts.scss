@@ -1,0 +1,78 @@
+.contacts {
+  padding-top: 30px;
+
+  @media (max-width: 1150px) {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    padding-top: 55px;
+  }
+
+  @media (max-width: 620px) {
+    padding-top: 0;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.contacts__list {
+}
+
+.contacts__item {
+  display: flex;
+  justify-content: space-between;
+
+  &:hover a,
+  &:focus a {
+    opacity: 0.6;
+  }
+
+  &::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--mail {
+    &::after {
+      background-image: url("../img/icons/icon-mail.svg");
+    }
+  }
+
+  &--tel {
+    &::after {
+      background-image: url("../img/icons/icon-tel.svg");
+    }
+  }
+
+  &--address {
+    &::after {
+      background-image: url("../img/icons/icon-address.svg");
+    }
+  }
+
+  &--github {
+    &::after {
+      background-image: url("../img/icons/icon-gitHub.svg");
+    }
+  }
+
+  &--telegram {
+    &::after {
+      background-image: url("../img/icons/icon-telegram.svg");
+    }
+  }
+
+  &--discord {
+    &::after {
+      background-image: url("../img/icons/icon-discord.svg");
+    }
+  }
+}
+
+.contacts__item a {
+  transition: opacity 200ms ease 0s;
+}

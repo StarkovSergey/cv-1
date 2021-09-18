@@ -1,0 +1,10 @@
+.knowledge {
+  @media (max-width: 620px) {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+  }
+}
+
+.knowledge__list {
+  text-align: center;
+}
